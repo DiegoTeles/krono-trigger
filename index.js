@@ -1,13 +1,13 @@
 const fs = require('fs');
 const csv = require('csv-parser');
-const { numberFormatter } = require('./utils/currencyFormat');
-const { isValidCpfCnpj } = require('./utils/cpf-cnpj-validate');
-const { validateTotalCurrency } = require('./utils/validateTotalCurrency');
-const { formatDate } = require('./utils/formatDate');
+const { numberFormatter } = require('./src/utils/currencyFormat');
+const { isValidCpfCnpj } = require('./src/utils/cpf-cnpj-validate');
+const { validateTotalCurrency } = require('./src/utils/validateTotalCurrency');
+const { formatDate } = require('./src/utils/formatDate');
 
 const results = [];
 
-fs.createReadStream('./data.csv')
+fs.createReadStream('./src/data.csv')
   .pipe(csv({ separator: ',' }))
   .on('data', (data) => {
     const formattedItem = {};
@@ -46,7 +46,7 @@ fs.createReadStream('./data.csv')
   .on('end', () => {
     const jsonResult = JSON.stringify(results, null, 2);
 
-    fs.writeFile('output.json', jsonResult, 'utf8', (err) => {
+    fs.writeFile('src/output.json', jsonResult, 'utf8', (err) => {
       if (err) {
         console.error('Erro ao exportar para JSON:', err);
         return;
