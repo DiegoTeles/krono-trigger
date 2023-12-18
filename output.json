@@ -1,0 +1,39 @@
+[
+  {
+    "nrInst": "533",
+    "nrAgencia": "32",
+    "cdClient": "56133",
+    "nmClient": "CLIENTE 1",
+    "nrCpfCnpj": "41854274761",
+    "nrContrato": "733067",
+    "dtContrato": "2022-12-27T03:00:00.000Z",
+    "qtPrestacoes": "5",
+    "vlTotal": "R$ 83.720,19",
+    "cdProduto": "777",
+    "dsProduto": "CDC PESSOA JURIDICA",
+    "cdCarteira": "17",
+    "dsCarteira": "CRÉDITO DIRETO AO CONSUMIDOR",
+    "nrProposta": "798586",
+    "nrPresta": "2",
+    "tpPresta": "Original",
+    "nrSeqPre": "0",
+    "dtVctPre": "2022-04-06T03:00:00.000Z",
+    "vlPresta": "R$ 17.524,03",
+    "vlMora": "R$ 29.196,96",
+    "vlMulta": "R$ 536,40",
+    "vlOutAcr": "R$ 0,00",
+    "vlIof": "R$ 0,00",
+    "vlDescon": "R$ 0,00",
+    "vlAtual": "R$ 47.257,39",
+    "idSituac": "Aberta",
+    "idSitVen": "Vencida",
+    "status": [
+      {
+        "tipo": "Tamanho inválido de CPF ou CNPJ"
+      },
+      {
+        "values": "Valores de prestações inconsistentes"
+      }
+    ]
+  }
+]
