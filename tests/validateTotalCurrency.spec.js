@@ -1,4 +1,4 @@
-const { validateTotalCurrency } = require('../utils/validateTotalCurrency');
+const { validateTotalCurrency } = require('../src/utils/validateTotalCurrency');
 
 test('Validate inconsistency in installment values', () => {
   const data = {

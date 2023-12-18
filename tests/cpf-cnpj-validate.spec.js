@@ -1,4 +1,4 @@
-const { isValidCpfCnpj } = require('../utils/cpf-cnpj-validate');
+const { isValidCpfCnpj } = require('../src/utils/cpf-cnpj-validate');
 
 test('Is invalid CPF', () => {
   const nrCpf = '41854274761';
