@@ -1,9 +1,9 @@
 const fs = require('fs');
 const csv = require('csv-parser');
-const { numberFormatter } = require('./src/utils/currencyFormat');
-const { isValidCpfCnpj } = require('./src/utils/cpf-cnpj-validate');
-const { validateTotalCurrency } = require('./src/utils/validateTotalCurrency');
-const { formatDate } = require('./src/utils/formatDate');
+const { numberFormatter } = require('./utils/currencyFormat');
+const { isValidCpfCnpj } = require('./utils/cpf-cnpj-validate');
+const { validateTotalCurrency } = require('./utils/validateTotalCurrency');
+const { formatDate } = require('./utils/formatDate');
 
 const results = [];
 
